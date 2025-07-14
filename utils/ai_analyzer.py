@@ -7,7 +7,7 @@ import os
 import json
 from typing import Dict, List, Optional, Any, Tuple
 import openai
-from langchain.llms import OpenAI
+from langchain_community.llms import OpenAI
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 from langchain.text_splitter import RecursiveCharacterTextSplitter
