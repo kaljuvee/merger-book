@@ -1,0 +1,42 @@
+[
+  {
+    "target_company": "Funding Circle",
+    "industry_match": true,
+    "geographic_overlap": true,
+    "business_model_similarity": true,
+    "similarity_score": 0.92,
+    "match_type": "horizontal"
+  },
+  {
+    "target_company": "Auxmoney",
+    "industry_match": true,
+    "geographic_overlap": false,
+    "business_model_similarity": true,
+    "similarity_score": 0.87,
+    "match_type": "horizontal"
+  },
+  {
+    "target_company": "LendingClub",
+    "industry_match": true,
+    "geographic_overlap": false,
+    "business_model_similarity": true,
+    "similarity_score": 0.85,
+    "match_type": "horizontal"
+  },
+  {
+    "target_company": "Zopa",
+    "industry_match": true,
+    "geographic_overlap": false,
+    "business_model_similarity": true,
+    "similarity_score": 0.81,
+    "match_type": "horizontal"
+  },
+  {
+    "target_company": "Prosper",
+    "industry_match": true,
+    "geographic_overlap": false,
+    "business_model_similarity": true,
+    "similarity_score": 0.78,
+    "match_type": "horizontal"
+  }
+]

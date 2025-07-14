@@ -21,12 +21,14 @@ st.set_page_config(
 )
 
 # Initialize session state
-if 'user_id' not in st.session_state:
-    st.session_state.user_id = None
-if 'username' not in st.session_state:
-    st.session_state.username = None
 if 'db' not in st.session_state:
     st.session_state.db = DatabaseManager(Config.DATABASE_PATH)
+
+# Set default user for testing (no authentication)
+if 'user_id' not in st.session_state:
+    st.session_state.user_id = 1  # Default test user
+if 'username' not in st.session_state:
+    st.session_state.username = "test_user"
 
 def main():
     """Main application entry point"""
@@ -36,15 +38,9 @@ def main():
         st.title("🤝 Merger Book")
         st.markdown("---")
         
-        # User authentication status
-        if st.session_state.user_id:
-            st.success(f"Welcome, {st.session_state.username}!")
-            if st.button("Logout"):
-                st.session_state.user_id = None
-                st.session_state.username = None
-                st.rerun()
-        else:
-            st.info("Please login to continue")
+        # User status (authentication disabled for testing)
+        st.success(f"Welcome, {st.session_state.username}!")
+        st.info("🔓 Authentication disabled for testing")
         
         st.markdown("---")
         
@@ -57,60 +53,8 @@ def main():
             for issue in config_status['issues']:
                 st.error(f"• {issue}")
     
-    # Main content area
-    if not st.session_state.user_id:
-        show_login_page()
-    else:
-        show_dashboard()
-
-def show_login_page():
-    """Display login/registration page"""
-    st.title("Welcome to Merger Book")
-    st.markdown("""
-    ### AI-Powered M&A Analysis Platform
-    
-    Discover potential merger partners and analyze synergy opportunities using advanced AI and financial data analysis.
-    """)
-    
-    tab1, tab2 = st.tabs(["Login", "Register"])
-    
-    with tab1:
-        st.subheader("Login")
-        with st.form("login_form"):
-            username = st.text_input("Username")
-            password = st.text_input("Password", type="password")
-            submit = st.form_submit_button("Login")
-            
-            if submit:
-                user = st.session_state.db.authenticate_user(username, password)
-                if user:
-                    st.session_state.user_id = user['user_id']
-                    st.session_state.username = user['username']
-                    st.success("Login successful!")
-                    st.rerun()
-                else:
-                    st.error("Invalid username or password")
-    
-    with tab2:
-        st.subheader("Register")
-        with st.form("register_form"):
-            new_username = st.text_input("Username", key="reg_username")
-            new_email = st.text_input("Email", key="reg_email")
-            new_password = st.text_input("Password", type="password", key="reg_password")
-            confirm_password = st.text_input("Confirm Password", type="password")
-            submit = st.form_submit_button("Register")
-            
-            if submit:
-                if new_password != confirm_password:
-                    st.error("Passwords do not match")
-                elif len(new_password) < 6:
-                    st.error("Password must be at least 6 characters")
-                else:
-                    try:
-                        user_id = st.session_state.db.create_user(new_username, new_email, new_password)
-                        st.success("Registration successful! Please login.")
-                    except Exception as e:
-                        st.error(f"Registration failed: {str(e)}")
+    # Main content area - always show dashboard
+    show_dashboard()
 
 def show_dashboard():
     """Display main dashboard"""

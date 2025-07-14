@@ -1,0 +1,38 @@
+{
+  "company_name": "EstateGuru",
+  "industry_classification": "fintech, real estate, lending, platform",
+  "business_model": "Digital lending platform for property-backed SME loans",
+  "revenue_info": {
+    "currency": "EUR",
+    "scale": "millions"
+  },
+  "geographic_markets": [
+    "europe",
+    "estonia",
+    "latvia",
+    "lithuania",
+    "finland"
+  ],
+  "key_products_services": [
+    "Property-backed loans",
+    "Digital lending platform",
+    "Investment opportunities"
+  ],
+  "strategic_objectives": [
+    "Business growth and expansion",
+    "Market expansion",
+    "Technology development"
+  ],
+  "technology_stack": [
+    "Digital platform",
+    "Web application"
+  ],
+  "target_customers": [
+    "SME borrowers",
+    "Individual investors"
+  ],
+  "competitive_advantages": [
+    "Cross-border operations",
+    "Property-backed security"
+  ]
+}

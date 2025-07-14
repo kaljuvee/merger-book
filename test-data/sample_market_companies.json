@@ -1,0 +1,37 @@
+[
+  {
+    "company_name": "LendingClub",
+    "industry_classification": "fintech, lending",
+    "business_model": "Peer-to-peer lending platform",
+    "geographic_markets": "United States",
+    "similarity_score": 0.85
+  },
+  {
+    "company_name": "Funding Circle",
+    "industry_classification": "fintech, lending",
+    "business_model": "SME lending platform",
+    "geographic_markets": "UK, Europe",
+    "similarity_score": 0.92
+  },
+  {
+    "company_name": "Prosper",
+    "industry_classification": "fintech, lending",
+    "business_model": "Personal lending platform",
+    "geographic_markets": "United States",
+    "similarity_score": 0.78
+  },
+  {
+    "company_name": "Zopa",
+    "industry_classification": "fintech, lending",
+    "business_model": "Digital bank and lending",
+    "geographic_markets": "United Kingdom",
+    "similarity_score": 0.81
+  },
+  {
+    "company_name": "Auxmoney",
+    "industry_classification": "fintech, lending",
+    "business_model": "P2P lending platform",
+    "geographic_markets": "Germany",
+    "similarity_score": 0.87
+  }
+]

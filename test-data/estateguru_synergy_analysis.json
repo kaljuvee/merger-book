@@ -1,0 +1,74 @@
+[
+  {
+    "target_company": "Funding Circle",
+    "match_score": 0.92,
+    "revenue_synergies": {
+      "cross_selling_potential": "High",
+      "market_expansion": "Limited",
+      "estimated_revenue_increase": "13%"
+    },
+    "cost_synergies": {
+      "technology_consolidation": "High",
+      "operational_efficiency": "Medium",
+      "estimated_cost_savings": "18%"
+    },
+    "strategic_synergies": {
+      "market_position": "Strengthened",
+      "competitive_advantage": "Enhanced",
+      "risk_diversification": "Improved"
+    },
+    "risk_factors": [
+      "Regulatory compliance differences",
+      "Cultural integration challenges",
+      "Technology integration complexity"
+    ]
+  },
+  {
+    "target_company": "Auxmoney",
+    "match_score": 0.87,
+    "revenue_synergies": {
+      "cross_selling_potential": "Medium",
+      "market_expansion": "Significant",
+      "estimated_revenue_increase": "13%"
+    },
+    "cost_synergies": {
+      "technology_consolidation": "High",
+      "operational_efficiency": "Medium",
+      "estimated_cost_savings": "17%"
+    },
+    "strategic_synergies": {
+      "market_position": "Strengthened",
+      "competitive_advantage": "Enhanced",
+      "risk_diversification": "Improved"
+    },
+    "risk_factors": [
+      "Regulatory compliance differences",
+      "Cultural integration challenges",
+      "Technology integration complexity"
+    ]
+  },
+  {
+    "target_company": "LendingClub",
+    "match_score": 0.85,
+    "revenue_synergies": {
+      "cross_selling_potential": "Medium",
+      "market_expansion": "Significant",
+      "estimated_revenue_increase": "12%"
+    },
+    "cost_synergies": {
+      "technology_consolidation": "High",
+      "operational_efficiency": "Medium",
+      "estimated_cost_savings": "17%"
+    },
+    "strategic_synergies": {
+      "market_position": "Strengthened",
+      "competitive_advantage": "Enhanced",
+      "risk_diversification": "Improved"
+    },
+    "risk_factors": [
+      "Regulatory compliance differences",
+      "Cultural integration challenges",
+      "Technology integration complexity"
+    ]
+  }
+]

@@ -1,0 +1,43 @@
+{
+  "company_name": "EstateGuru",
+  "processing_date": "2025-07-14T06:54:08.691606",
+  "document_info": {
+    "filename": "EstateGuru-2024-10-01.pdf",
+    "pages": 22,
+    "words_extracted": 1690
+  },
+  "business_features_summary": {
+    "industry": "fintech, real estate, lending, platform",
+    "business_model": "Digital lending platform for property-backed SME loans",
+    "geographic_markets": [
+      "europe",
+      "estonia",
+      "latvia",
+      "lithuania",
+      "finland"
+    ],
+    "key_products": [
+      "Property-backed loans",
+      "Digital lending platform",
+      "Investment opportunities"
+    ],
+    "strategic_objectives": [
+      "Business growth and expansion",
+      "Market expansion",
+      "Technology development"
+    ]
+  },
+  "analysis_results": {
+    "total_matches_found": 5,
+    "top_match": "Funding Circle",
+    "top_match_score": 0.92,
+    "synergy_analyses_completed": 3
+  },
+  "key_insights": [
+    "EstateGuru operates in the fintech, real estate, lending, platform sector",
+    "Primary markets: europe, estonia, latvia, lithuania, finland",
+    "Best match: Funding Circle with 92% similarity",
+    "Potential revenue synergies: 13% increase",
+    "Potential cost synergies: 18% savings"
+  ]
+}

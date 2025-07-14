@@ -37,15 +37,15 @@ if 'ai_analyzer' not in st.session_state:
 def main():
     """Main upload page function"""
     
-    # Check authentication
-    if not st.session_state.get('user_id'):
-        st.error("Please login to access this page")
-        if st.button("Go to Login"):
-            st.switch_page("main.py")
-        return
+    # Set default user for testing (no authentication)
+    if 'user_id' not in st.session_state:
+        st.session_state.user_id = 1  # Default test user
+    if 'username' not in st.session_state:
+        st.session_state.username = "test_user"
     
     st.title("📤 Upload Business Documents")
     st.markdown("Upload your business plan, annual report, or pitch deck to extract key business information and find potential merger partners.")
+    st.info("🔓 Authentication disabled for testing")
     
     # Configuration check
     config_status = Config.validate_config()
