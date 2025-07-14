@@ -4,9 +4,6 @@
 streamlit>=1.28.0
 streamlit-authenticator>=0.2.3
 
-# Database
-sqlite3
-
 # Environment and configuration
 python-dotenv>=1.0.0
 
@@ -42,10 +39,4 @@ seaborn>=0.12.0
 # Utilities
 python-dateutil>=2.8.0
 pytz>=2023.3
-hashlib
-json
-datetime
-typing
-os
-sys
 
